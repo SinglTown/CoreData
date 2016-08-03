@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeh-RC-ROp">
+                                <rect key="frame" x="0.0" y="70" width="600" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.86633413809294613" blue="0.1243619413203626" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="插入数据"/>
+                                <connections>
+                                    <action selector="insertDataButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GFT-sG-scv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLf-sn-Dpf">
+                                <rect key="frame" x="0.0" y="130" width="600" height="30"/>
+                                <color key="backgroundColor" red="0.32715707673094996" green="1" blue="0.83661520270502554" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="查找所有"/>
+                                <connections>
+                                    <action selector="selectAllDataButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kVb-xf-WkV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofi-PD-Kfe">
+                                <rect key="frame" x="0.0" y="190" width="600" height="30"/>
+                                <color key="backgroundColor" red="0.74089335279019763" green="1" blue="0.28547430603368806" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="根据条件查找"/>
+                                <connections>
+                                    <action selector="searchByButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yfE-qX-iJs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ll5-oi-3NQ">
+                                <rect key="frame" x="0.0" y="250" width="600" height="30"/>
+                                <color key="backgroundColor" red="0.64305975781254365" green="0.78057391293890144" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="根据条件修改"/>
+                                <connections>
+                                    <action selector="changeByButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xc9-XX-h0d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1l-na-MXy">
+                                <rect key="frame" x="0.0" y="310" width="600" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.49268845869062849" blue="0.84180575690742243" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="根据条件删除"/>
+                                <connections>
+                                    <action selector="deleteByButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tK-Wx-VZs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnc-xQ-oxw">
+                                <rect key="frame" x="0.0" y="370" width="600" height="30"/>
+                                <color key="backgroundColor" red="0.17435283887743835" green="0.79305060653700998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="删除所有"/>
+                                <connections>
+                                    <action selector="deleteAllDataButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OxD-aZ-QMK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Fnc-xQ-oxw" secondAttribute="trailing" id="0Lu-F2-tKW"/>
+                            <constraint firstItem="h1l-na-MXy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3PF-ZN-ubV"/>
+                            <constraint firstItem="gLf-sn-Dpf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5mq-To-0tF"/>
+                            <constraint firstItem="Fnc-xQ-oxw" firstAttribute="top" secondItem="h1l-na-MXy" secondAttribute="bottom" constant="30" id="6AE-xU-FdS"/>
+                            <constraint firstAttribute="trailing" secondItem="jeh-RC-ROp" secondAttribute="trailing" id="6FY-le-3wM"/>
+                            <constraint firstItem="h1l-na-MXy" firstAttribute="top" secondItem="Ll5-oi-3NQ" secondAttribute="bottom" constant="30" id="9nG-bj-PKP"/>
+                            <constraint firstItem="jeh-RC-ROp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AMN-KT-gTb"/>
+                            <constraint firstAttribute="trailing" secondItem="gLf-sn-Dpf" secondAttribute="trailing" id="B8i-C4-i2k"/>
+                            <constraint firstItem="Ofi-PD-Kfe" firstAttribute="top" secondItem="gLf-sn-Dpf" secondAttribute="bottom" constant="30" id="Ch6-TZ-Gvq"/>
+                            <constraint firstAttribute="trailing" secondItem="Ll5-oi-3NQ" secondAttribute="trailing" id="NGJ-jL-SLI"/>
+                            <constraint firstItem="Ofi-PD-Kfe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="O94-ph-kGq"/>
+                            <constraint firstItem="Ll5-oi-3NQ" firstAttribute="top" secondItem="Ofi-PD-Kfe" secondAttribute="bottom" constant="30" id="ONL-bM-5Xo"/>
+                            <constraint firstItem="Fnc-xQ-oxw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="STf-uy-Rhg"/>
+                            <constraint firstItem="gLf-sn-Dpf" firstAttribute="top" secondItem="jeh-RC-ROp" secondAttribute="bottom" constant="30" id="WbN-8V-YXI"/>
+                            <constraint firstItem="jeh-RC-ROp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gyE-tn-Idf"/>
+                            <constraint firstItem="Ll5-oi-3NQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="k43-R4-hD8"/>
+                            <constraint firstAttribute="trailing" secondItem="Ofi-PD-Kfe" secondAttribute="trailing" id="l7X-eV-EOj"/>
+                            <constraint firstAttribute="trailing" secondItem="h1l-na-MXy" secondAttribute="trailing" id="py3-5w-UQy"/>
+                            <constraint firstItem="jeh-RC-ROp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="sde-hK-IuZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
